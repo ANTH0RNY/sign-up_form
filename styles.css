@@ -1,0 +1,111 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-image: url("./tim-mossholder-tq8Cuap8_wY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    --border-colors: #0275d8;
+}
+
+.left{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.content{
+    background-color: rgba(105, 74, 56, .6);
+    padding: 2rem;
+}
+@media (max-width: 720px) {
+    .left{
+        display: none;
+    }
+}
+
+@media (max-width: 864px) {
+    .right{
+        border-radius:  5rem 0;
+    } 
+}
+
+form{
+display: grid;
+grid-template-rows: 1fr 1fr;
+gap: 2rem;
+padding: 1rem;
+}
+
+.right{
+    flex:1;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 20fr;
+    background-color: rgba(146, 191, 177, .75);
+    
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    padding: 1rem;
+
+}
+.first{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.second{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.right>h3{
+    text-align: center;
+    padding: 1rem;
+}
+
+input{
+    border-radius: .4rem;
+    border: none;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #0275d8;
+}
+
+.footer>button{
+    color: var(--border-colors);
+    padding: .75rem;
+    border-radius: .5rem;
+    border: var(--border-colors) 3px solid;
+    width: 10rem;
+    font-size: 18px;
+    background-color: white;
+}
+
+.footer>button:hover{
+    background-color: var(--border-colors);
+    color: white;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    color: #0275d8;
+}
+
+#error{
+    color: red;
+}

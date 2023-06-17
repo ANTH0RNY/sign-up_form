@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="./index.js" defer></script>
+    <title>Sign-up form</title>
+  </head>
+  <body>
+    <div class="left">
+        <div class="content">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, iste.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+    <div class="right">
+      <h3>
+        This is not a real online service! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Adipisci, maxime!
+      </h3>
+      <form method="get" action="/">
+        <div class="main">
+            <div class="first">
+              <label for="input-1">FIRST NAME</label>
+              <input type="text" required id="input-1" />
+              <label for="input-2">EMAIL</label>
+              <input type="email" required id="input-2" />
+              <label for="input-3">PASSWORD</label>
+              <input type="password" required id="input-3" />
+            </div>
+            <div class="second">
+              <label for="input-4">LAST NAME</label>
+              <input type="text" required id="input-4" />
+              <label for="input-5">PHONE NUMBER</label>
+              <input type="tel" required id="input-5" />
+              <label for="input-6">CONFIRM PASSWORD<div id="error"></div></label>
+              <input type="password" required id="input-6" title="Should be matching with password" />
+            </div>
+        </div>
+        <div class="footer">
+            <button type="submit" class="btn">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </form>
+      
+    </div>
+  </body>
+</html>
